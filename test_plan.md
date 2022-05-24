@@ -104,5 +104,5 @@ expect(diary.reading_time(250)).to eq 0
 
 #4
 diary = Diary.new()
-expect(diary.find_best_entry_for_reading_time(250, 2)).to eq "" 
+expect(diary.find_best_entry_for_reading_time(250, 2)).to eq nil 
 
