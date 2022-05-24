@@ -74,7 +74,7 @@ diary_entry.count_words() # => 3
 
 #3
 diary_entry = DiaryEntry.new("Monday", "word " * 250)
-diary_entry.reading_time(250) # => 1 (as float)
+diary_entry.reading_time(250) # => 1
 
 #4
 diary_entry = DiaryEntry.new("Monday", "word " * 250)
@@ -92,7 +92,7 @@ _diary_
 
 #1
 diary = Diary.new()
-expect { diary.all() }.to raise_error "The diary is currently empty"
+expect (diary.all).to eq ""
 
 #2
 diary = Diary.new()
